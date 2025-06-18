@@ -1,0 +1,308 @@
+body{
+    background-color: #cddfef;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.borda{
+    margin-bottom: 3%;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 120px;
+}
+
+.bordacima{
+    z-index: 5;
+    border-bottom: 5px solid #035374;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    background-color: #c1c1c1;
+    width: 100%;
+    height: 15%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 10% 30% 10% 17% 10% 15%;
+    grid-template-rows: 60px 90px;
+    margin-bottom: 4%;
+}
+
+#mousecima{
+    background-color: #c1c1c1;
+    border-bottom: 5px solid #035374;
+    border-left: 5px solid #035374;
+    border-right: 5px solid #035374;
+    width: 200px;
+    height: 210px;
+    grid-template-columns: 190px;
+    grid-template-rows: 20px 20px 40px;
+    row-gap: 60px;
+    position: fixed;
+    top: 15%;
+    left: 87%;
+}
+
+.lista{
+    width: 210px;
+    height: 370px;
+    text-align: center;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px;
+    z-index: 10;
+}
+
+.topiclista{
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.topiclista:hover{
+    border-bottom: 5px solid #035374;
+}
+.image{
+    width: 40px;
+    margin-top: 20px;
+}
+
+.user{
+    display:grid;
+    grid-template-columns: 60px 200px;
+}
+
+.pesquisa{
+    margin-top: 4%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #035374;
+    max-height: 10%;
+}
+
+.textouser {
+    margin-top: 18%;
+    font-size: 12px;
+}
+
+.topicos{
+    margin-left: 100%;
+    display: grid;
+    grid-template-columns: 240px 270px 260px 240px 250px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.topico{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    align-content: center;
+}
+.topico:hover{
+    border-bottom: 5px solid #035374;
+}
+#tema{
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.produtos {
+    align-items: center;
+    margin: auto;
+    display: grid;
+    row-gap: 300px;
+    width: 1370px;
+    grid-template-columns: 1370px;
+    grid-template-rows: 250px 400px 100px;
+}
+
+.conteudo{
+    align-items: center;
+    display: grid;
+    column-gap: 80px;
+    row-gap: 150px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
+}
+
+.titulo{
+    color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center; 
+}
+.produtos img{
+    width: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+
+.produto{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px #0475a670;
+}
+
+
+.banner{
+    height: 900px;
+    width: 100%;
+}
+
+button{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #d2ac47;
+    width: 15%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 42%;
+    margin-bottom: 10%;
+}
+
+#quemsomos{
+    width: 60%;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #0475a670;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+#bot{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #035374;
+    width: 15%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 42%;
+    margin-bottom: 10%;
+    color: white;
+}
+.titulovalores{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10%;
+}
+#flutuante{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+    
+}
+
+#imagem img{
+    width: 300px;
+}
+
+#imagem{
+    text-align: center;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-bottom: 10%;
+}
+
+.manutencao{
+    display: grid;
+    grid-template-columns: 900px 700px;
+    grid-template-rows: 600px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+table{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    margin:0 auto;
+    width: 520px;
+    height: 520px;
+    color:#035374 ;
+}
+
+
+form{
+    box-shadow: 0px 5px 15px #0475a670;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Montserrat';
+}
+input,select,textarea{
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 16px;
+}
+
+.botform{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #035374;
+    width: 15%;
+    padding: 2%;
+    border-radius: 10px;
+    margin:auto;
+    margin-bottom: 5%;
+    color: white;
+}
+
+#termos{
+    margin-top: 10%;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c1c1c1;
+    color: rgb(0, 0, 0);
+    height: 520px;
+    border-top: 5px solid #E7BB00;
+    width: 100%;
+}
+.icones{
+    width: 30px;
+    height: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+.r1{
+    margin: 30px;
+    padding: 20px;
+}
+.pagamento{
+    width: 30px;
+    height: 30px;
+}
+.designcorpo{
+    background-color: rgb(17, 17, 17);
+    color: #035374;
+}
+#Copyright{
+    padding-left: 400px;
+}
