@@ -306,7 +306,7 @@ footer{
     padding-left: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 649px) {
     body {
         font-size: 12px; 
         margin-top: 22%;
