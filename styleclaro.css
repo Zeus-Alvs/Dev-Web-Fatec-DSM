@@ -248,6 +248,15 @@ table{
     color:#035374 ;
 }
 
+.manutencao h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#form{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
 
 form{
     box-shadow: 0px 5px 15px #0475a670;
@@ -318,20 +327,19 @@ footer{
         font-size: 12px; 
         margin-top: 22%;
     }
-/* --- CABEÇALHO (VERSÃO CORRIGIDA) --- */
-/* --- CABEÇALHO: Layout de 2 Fileiras --- */
+
 .bordacima {
     height: auto;
     padding: 10px;
-    /* Define 4 colunas para a fileira 1 e 2 fileiras no total */
+
     display: grid;
     grid-template-columns: auto 1fr auto 20%;
     grid-template-rows: 60px auto;
     align-items: center;
-    gap: 10px 15px; /* Espaçamento entre linhas e colunas */
+    gap: 10px 15px; 
 }
 
-/* --- Itens da Primeira Fileira --- */
+
 .logo {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -357,7 +365,7 @@ footer{
     grid-row: 1 / 2;
     grid-column: 4 / 5;
     justify-self: center;
-    display: block; /* Garante que o ícone esteja visível */
+    display: block; 
     width: auto;
     height: auto;
 }
@@ -370,23 +378,23 @@ footer{
     display: none;
 }
 
-/* --- Itens da Segunda Fileira --- */
+
 .topicos {
-    grid-row: 2 / 3;      /* Posiciona na fileira 2 */
-    grid-column: 1 / -1;  /* Ocupa a largura total da fileira 2 */
-    display: flex;        /* Alinha os links lado a lado */
-    flex-wrap: wrap;      /* Permite que os links quebrem a linha se não couberem */
-    justify-content: center; /* Centraliza o conjunto de links */
+    grid-row: 2 / 3;     
+    grid-column: 1 / -1;  
+    display: flex;        
+    flex-wrap: wrap;     
+    justify-content: center; 
     margin-left: 0;
     padding-top: 5px;
 }
 
 .topico {
     margin: 5px;
-    font-size: 12px; /* Ajuste o tamanho da fonte se necessário */
+    font-size: 12px; 
 }
 
-/* Esconde o menu dropdown que é controlado pelo ícone de lista, pois ele é redundante agora */
+
 #mousecima {
     display: none;
 }
