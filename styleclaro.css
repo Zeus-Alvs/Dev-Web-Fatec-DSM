@@ -169,8 +169,12 @@ button{
     margin-bottom: 10%;
 }
 
+#quemsomos h1{
+    font-family: "Press Start 2P", system-ui;
+}
+
 #quemsomos{
-    width: 60%;
+    width: 80%;
     height: 500px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -181,6 +185,8 @@ button{
     box-shadow: 0px 5px 15px #0475a670;
     margin-bottom: 5%;
     padding: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat';
 }
 
 #bot{
@@ -305,4 +311,213 @@ footer{
 }
 #Copyright{
     padding-left: 400px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px; 
+        margin-top: 22%;
+    }
+/* --- CABEÇALHO (VERSÃO CORRIGIDA) --- */
+/* --- CABEÇALHO: Layout de 2 Fileiras --- */
+.bordacima {
+    height: auto;
+    padding: 10px;
+    /* Define 4 colunas para a fileira 1 e 2 fileiras no total */
+    display: grid;
+    grid-template-columns: auto 1fr auto 20%;
+    grid-template-rows: 60px auto;
+    align-items: center;
+    gap: 10px 15px; /* Espaçamento entre linhas e colunas */
+}
+
+/* --- Itens da Primeira Fileira --- */
+.logo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 70px;
+    margin-left: 0;
+}
+
+.pesquisa {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 100%;
+    margin-top: 0;
+}
+
+.user {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    justify-self: center;
+    width: 60px;
+}
+
+.lista {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    justify-self: center;
+    display: block; /* Garante que o ícone esteja visível */
+    width: auto;
+    height: auto;
+}
+
+.user .image, .lista .image {
+    margin-top: 0;
+}
+
+.textouser {
+    display: none;
+}
+
+/* --- Itens da Segunda Fileira --- */
+.topicos {
+    grid-row: 2 / 3;      /* Posiciona na fileira 2 */
+    grid-column: 1 / -1;  /* Ocupa a largura total da fileira 2 */
+    display: flex;        /* Alinha os links lado a lado */
+    flex-wrap: wrap;      /* Permite que os links quebrem a linha se não couberem */
+    justify-content: center; /* Centraliza o conjunto de links */
+    margin-left: 0;
+    padding-top: 5px;
+}
+
+.topico {
+    margin: 5px;
+    font-size: 12px; /* Ajuste o tamanho da fonte se necessário */
+}
+
+/* Esconde o menu dropdown que é controlado pelo ícone de lista, pois ele é redundante agora */
+#mousecima {
+    display: none;
+}
+
+    .banner {
+        height: auto; 
+    }
+
+    #bot {
+        width: 60%;
+        margin-left: 20%; 
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    #quemsomos {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-top: 25%; 
+        font-size: 12px;
+        
+    }
+
+    .titulo{
+    
+    width: 30%;
+    margin: 1px;
+    text-align: center; 
+    }
+
+    .produtos {
+        margin-top: 40%;
+        margin-left: 15%;
+        width: 40%;
+        row-gap: 50px;
+        grid-template-rows: auto; 
+    }
+
+    .conteudo {
+        
+        grid-template-columns: 60%; 
+        row-gap: 40px;
+        width: 50%; 
+    }
+    
+    .produto {
+        width: 100%; 
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .produtos img {
+        width: 70%; 
+        margin-top: 20px;
+    }
+
+    .titulovalores {
+        font-size: 16px;
+        padding: 0 15px; 
+        margin-top: 40%;
+    }
+
+    #imagem figure {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .manutencao h1{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    .manutencao {
+        grid-template-columns: 100%;
+        margin-bottom: 80%;
+        grid-template-rows: 70% 60%;
+    }
+
+    table {
+        width: 95%; 
+        height: auto;
+        font-size: 10px; 
+    }
+    
+    td, th {
+        padding: 8px; 
+    }
+
+    #form{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        padding: 15px;
+        width: 95%; /* Largura total menos um pouco de espaço */
+        box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    }
+
+    .botform {
+        width: 50%;
+        padding: 15px;
+    }
+
+    /* --- RODAPÉ --- */
+    #termos {
+        height: auto; /* Altura flexível para o rodapé */
+    }
+
+    footer {
+        flex-direction: column; /* Empilha as seções do rodapé */
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center;
+    }
+
+    .r1 {
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    #Copyright {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* --- TEMA --- */
+    #tema {
+        width: 60px; /* Diminui o ícone de tema */
+    }
 }
