@@ -1,5 +1,5 @@
 body{
-    background-color: #cddfef;
+    background-color: #9aa0a5;
     font-family: "Press Start 2P", system-ui;
     font-style: normal;
     font-size: 14px;
@@ -292,10 +292,10 @@ input,select,textarea{
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: bold;
-    background-color: #c1c1c1;
+    background-color: #9aa0a5;
     color: rgb(0, 0, 0);
     height: 520px;
-    border-top: 5px solid #E7BB00;
+    border-top: 5px solid #035374;
     width: 100%;
 }
 .icones{
