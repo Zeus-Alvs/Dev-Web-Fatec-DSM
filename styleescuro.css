@@ -213,7 +213,7 @@ body{
 
 .manutencao{
     display: grid;
-    grid-template-columns: 900px 700px;
+    grid-template-columns: 1070px 600px;
     grid-template-rows: 600px;
     align-items: center;
     text-align: center;
