@@ -140,10 +140,26 @@
                 $acertos++;
             }
         }
+        $pontuacao = ($acertos / $totalPerguntas) * 10;
+
+        if ($pontuacao >= 8){
+            $mensagem = "Parabéns!! Nota alta.";
+            $classe = "success";
+        }
+        elseif ($pontuacao >= 5){
+            $mensagem = "Muito bem mas pode melhorar!";
+            $classe = "warning";
+        }
+        else {
+            $mensagem = "Nota baixa horrivel! Treine mais.";
+            $classe = "danger";
+        }
 
         echo "<div class='quizfundo'>";
             echo "<h2>Resultado do Quiz - $temaSelecionado </h2>";
             echo "<p>Você acertou - $acertos - de $totalPerguntas perguntas. </p>";
+            echo "<p>Sua pontuacao foi: $pontuacao </p>";
+            echo "<p> $mensagem </p>";
             echo "<div class='button'>";
                 echo "<a href='?'><button>Jogar Novamente</button></a>";
             echo "</div>";

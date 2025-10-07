@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #3c3434;
+}
+h3{
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555555;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 12px;
+    background-color:rgb(117, 148, 64);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(138, 174, 76);
+}
+
+a.botao {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    padding: 10px 20px;
+    background-color:crimson;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+a.botao:hover {
+    background-color: rgb(255, 25, 71);
+}
