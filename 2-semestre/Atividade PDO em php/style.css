@@ -1,4 +1,4 @@
-/* Configurações Globais e Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: sans-serif; /* Substitua por uma fonte mais amigável, como 'Open Sans' */
+    font-family: sans-serif; 
     line-height: 1.6;
-    background-color: #f7f3e8; /* Bege claro suave */
+    background-color: #f7f3e8; 
     color: #333;
 }
 
@@ -92,7 +92,7 @@ nav a:hover {
     background-color: #b36730;
 }
 
-/* 🍪 SEÇÕES GERAIS */
+
 section {
     padding: 60px 0;
     text-align: center;
@@ -140,7 +140,7 @@ h2, h3 {
     background-color: #b36730;
 }
 
-/* 🍪 SEÇÃO 2: PRODUTOS MAIS VENDIDOS */
+
 .produtos-vendidos {
     background-color: #ffffff;
 }
@@ -171,7 +171,6 @@ h2, h3 {
     height: auto;
     border-radius: 4px;
     margin-bottom: 15px;
-    /* Imagem de placeholder, substitua por uma imagem real e ajuste o tamanho conforme necessário */
     background-color: #ccc; 
     min-height: 200px; 
     object-fit: cover;
@@ -195,7 +194,6 @@ h2, h3 {
 
 
 
-/* 🍪 SEÇÃO 3: AVALIAÇÕES DOS CLIENTES */
 .avaliacoes {
     background-color: #f7f3e8;
 }
@@ -364,69 +362,65 @@ footer h4 {
     color: #b36730;
 }
 
-/*
- * 🍪 ESTILOS ESPECÍFICOS PARA O DASHBOARD
- *
- */
 
 .dashboard-page {
-    padding: 50px 0; /* Espaçamento interno */
+    padding: 50px 0; 
     margin-bottom: 50px;
-    background-color: #f7f3e8; /* Cor de fundo da sua body */
-    min-height: calc(100vh - 80px); /* Garante que o main ocupe a altura restante */
+    background-color: #f7f3e8;
+    min-height: calc(100vh - 80px); 
 }
 
 .dashboard-title {
-    color: #6d3319; /* Marrom escuro da sua identidade */
-    text-align: left; /* Alinhamento do título */
+    color: #6d3319;
+    text-align: left; 
     margin-bottom: 30px;
-    margin-left: 165px; /* Alinha com o conteúdo do container */
+    margin-left: 165px; 
     font-size: 2.2em;
 }
 
 .dashboard-grid {
     display: grid;
-    grid-template-columns: 400px 400px; /* 2 colunas em telas maiores, ajusta em menores */
-    gap: 30px; /* Espaçamento entre os cards */
-    justify-content: center; /* Centraliza o grid se houver poucas colunas */
-    max-width: 900px; /* Largura máxima para o grid de cards */
-    margin: 0 auto; /* Centraliza o grid */
+    grid-template-columns: 400px 400px; 
+    gap: 30px; 
+    justify-content: center;
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 .dashboard-card {
-    background-color: #ffffff; /* Fundo branco para os cards */
-    border-radius: 12px; /* Cantos mais arredondados */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     padding: 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espalha o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    min-height: 200px; /* Altura mínima para os cards */
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 200px; 
 }
 
 .dashboard-card:hover {
-    transform: translateY(-8px); /* Efeito de elevação ao passar o mouse */
+    transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-large {
-    font-size: 3.5em; /* Tamanho grande para os ícones */
-    color: #d17a3a; /* Laranja da sua marca */
+    font-size: 3.5em; 
+    color: #d17a3a; 
     margin-bottom: 20px;
 }
 
 .dashboard-card h3 {
-    color: #6d3319; /* Marrom escuro para os títulos dos cards */
+    color: #6d3319; 
     margin-bottom: 10px;
     font-size: 1.3em;
 }
 
 .access-link {
     display: inline-block;
-    color: #d17a3a; /* Laranja para o link "Acessar" */
+    color: #d17a3a; 
     font-weight: bold;
     text-decoration: none;
     padding: 8px 15px;
@@ -436,70 +430,65 @@ footer h4 {
 }
 
 .access-link:hover {
-    background-color: #d17a3a; /* Fundo laranja ao passar o mouse */
-    color: #ffffff; /* Texto branco */
+    background-color: #d17a3a; 
+    color: #ffffff; 
 }
 
-/*
- * 🍪 ESTILOS ESPECÍFICOS PARA TABELAS (Gerenciamento de Avaliações)
- *
- */
 
 .dashboard-tabela {
     padding: 40px 0;
-    background-color: #f7f3e8; /* Fundo Bege Claro */
+    background-color: #f7f3e8; 
 }
 
-/* Container principal da tabela, com bordas e sombra */
+
 .table-container {
     max-width: 1100px;
     margin: 40px auto;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Garante que as bordas arredondadas funcionem */
+    overflow: hidden; 
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Remove o espaçamento padrão entre células */
+    border-collapse: collapse; 
     text-align: left;
 }
 
-/* Cabeçalho da Tabela (Fundo Laranja) */
+
 thead th {
-    background-color: #d17a3a; /* Laranja da sua marca */
+    background-color: #d17a3a; 
     color: white;
     padding: 15px 15px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-/* Corpo da Tabela */
+
 tbody tr {
     border-bottom: 1px solid #eee;
     transition: background-color 0.3s;
 }
 
 tbody tr:last-child {
-    border-bottom: none; /* Remove a borda da última linha */
+    border-bottom: none; 
 }
 
 tbody td {
     padding: 15px 15px;
     color: #333;
-    /* Alinha o texto na vertical, se as linhas tiverem alturas diferentes */
     vertical-align: middle; 
 }
 
-/* Cor de fundo ao passar o mouse sobre a linha */
+
 tbody tr:hover {
-    background-color: #fcece3; /* Um tom de bege/laranja muito claro */
+    background-color: #fcece3;
 }
 
-/* Estilo para as estrelas */
+
 .star-icon {
-    color: #ff9900; /* Laranja/Amarelo do destaque */
+    color: #ff9900; 
     width: 40px;
     padding: 5px;
 }
@@ -522,9 +511,9 @@ tbody tr:hover {
 }
 
 
-/* Estilo para o botão de Ação (Excluir) */
+
 .btn-tabela-acao {
-    background-color: #d17a3a; /* Laranja da sua marca */
+    background-color: #d17a3a; 
     color: white;
     padding: 8px 15px;
     border: none;
@@ -539,18 +528,18 @@ tbody tr:hover {
 }
 
 .btn-tabela-acao:hover {
-    background-color: #b36730; /* Laranja um pouco mais escuro no hover */
+    background-color: #b36730; 
 }
 
 .table-header-controls {
     max-width: 1100px;
-    margin: 0 auto 20px auto; /* Margem acima da tabela */
+    margin: 0 auto 20px auto; 
     text-align: left;
-    padding: 0 15px; /* Padding para telas menores */
+    padding: 0 15px; 
 }
 
 .btn-novo-servico {
-    background-color: #d17a3a; /* Laranja da marca */
+    background-color: #d17a3a; 
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -563,35 +552,35 @@ tbody tr:hover {
 }
 
 .btn-novo-servico:hover {
-    background-color: #b36730; /* Laranja mais escuro no hover */
+    background-color: #b36730; 
 }
 
-/* Estilo para a imagem dentro da célula da tabela */
+
 .tabela-foto {
-    width: 60px; /* Tamanho fixo para a miniatura */
+    width: 60px; 
     height: 60px;
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-fit: cover; 
     border-radius: 4px;
     border: 1px solid #eee;
 }
 
-/* Container de Ações para alinhar os botões */
+
 .table-actions {
     display: flex;
-    gap: 10px; /* Espaço entre os botões */
+    gap: 10px; 
     align-items: center;
 }
 
-/* Para o form dentro da célula de ação */
+
 .form-acao {
     display: inline-block;
     margin: 0;
 }
 
-/* Estilos de cor para os botões Editar e Excluir */
+
 
 .btn-editar {
-    background-color: #ff9900; /* Laranja mais claro ou de destaque */
+    background-color: #ff9900; 
 }
 
 .btn-editar:hover {
@@ -599,14 +588,14 @@ tbody tr:hover {
 }
 
 .btn-excluir {
-    background-color: #d17a3a; /* Laranja padrão da sua marca (pode ser um vermelho sutil se preferir) */
+    background-color: #d17a3a; 
 }
 
 .btn-excluir:hover {
     background-color: #b36730;
 }
 
-/* 🍪 RESPONSIVIDADE BÁSICA (Ajustes para telas menores) */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -655,10 +644,10 @@ tbody tr:hover {
         margin: 5px;
     }
 
-    /* Responsividade básica para o Dashboard */
+
     .dashboard-grid {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-        max-width: 400px; /* Limita a largura do grid em mobile */
+        grid-template-columns: 1fr; 
+        max-width: 400px;
     }
 
     .dashboard-title {
@@ -670,15 +659,15 @@ tbody tr:hover {
         overflow-x: auto;
     }
     table {
-        min-width: 600px; /* Garante que a tabela não se quebre */
+        min-width: 600px; 
     }
 
     .table-actions {
-        flex-direction: column; /* Empilha os botões Editar e Excluir */
+        flex-direction: column;
         align-items: flex-start;
     }
     .btn-tabela-acao {
-        width: 100%; /* Faz os botões empilhados ocuparem a largura total */
+        width: 100%; 
         justify-content: center;
         margin: 2px 0;
     }

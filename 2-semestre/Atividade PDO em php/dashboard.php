@@ -2,9 +2,6 @@
     require 'config.php';
     session_start();
     
-    $query = $pdo->prepare('SELECT * FROM usuario WHERE id = ?');
-    $query->execute([$_SESSION['usuario_id']]);
-    $usuario = $query->fetch();
     $query = $pdo->query("SELECT * FROM avaliacao"); 
     $avaliacoes = $query->fetchAll();
     $query = $pdo->query("SELECT * FROM contato"); 
@@ -35,7 +32,7 @@
         
     }
 
-    if($usuario['nivel'] != "admin"){
+    if($_SESSION['usuario_nivel'] != "admin"){
         header('Location: index.php');
     }
     else{

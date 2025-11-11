@@ -1,7 +1,10 @@
 <?php
 require 'config.php';
 session_start();
-
+if($_SESSION['usuario_nivel'] != "admin"){
+    header('Location: index.php');
+}
+else{
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['editar'] === "2") {
     
     $caminho_foto = null; 
@@ -163,3 +166,4 @@ else if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 </body>
 </html>
 
+<?php } ?>

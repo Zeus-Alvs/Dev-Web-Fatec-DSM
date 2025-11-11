@@ -13,6 +13,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $_SESSION['usuario_id'] = $usuario['id'];
         $_SESSION['usuario_nome'] = $usuario['nome'];
         $_SESSION['usuario_foto'] = $usuario['foto'];
+        $_SESSION['usuario_nivel'] = $usuario['nivel'];
 
         if($usuario['nivel'] === "admin"){
             header('Location: dashboard.php');
